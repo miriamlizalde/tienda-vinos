@@ -1,4 +1,21 @@
+using Backend.Data;
+using Backend.Models;
+using Backend.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("BackendDb");
+
+//registrar servicios
+builder.Services.AddScoped<IBodegaRepository, BodegaEfRepository>();
+builder.Services.AddScoped<IVinoRepository, VinoEfRepository>();
+
+builder.Services.AddDbContext<BackendDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IBodegaServices, BodegaServices>();
+builder.Services.AddScoped<IVinoServices, VinoServices>();
+
 
 // Add services to the container.
 
