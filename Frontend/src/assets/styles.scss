@@ -1,0 +1,42 @@
+@use 'variables';
+@use 'mixins';
+@use 'header';
+@use 'footer';
+
+
+
+  
+body {
+  font-family: sans-serif;
+  color: variables.$primary-color;
+  background-color: #E0FFFF;
+}
+
+.main{
+  @include mixins.flex-center(column)
+}
+
+.visual {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .menu{
+     padding: 2rem;
+    text-align: center;
+    position: relative;
+    .menu-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;}
+        .menu-item {
+        
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;}
+  }

@@ -1,0 +1,12 @@
+@use 'variables';
+@use 'mixins';
+
+footer {
+  background-color: variables.$footer-color;
+  color: variables.$secundary-color;
+  font-family: variables.$main-font;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  @include mixins.flex-center(column);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pp2</title>
+  <!-- Enlaza el CSS compilado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <header>
+        <div class="logo">
+            <h1>Bodega Vinos Saragosa</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.HTML">Inicio</a></li>
+                    <li><a href="productos.HTML">Productos</a></li>
+                    <li><a href="clientes.HTML">Clientes</a></li>
+                    <li><a href="pedidos.HTML">Pedidos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <main class="main">
+    <section class="visual">
+     
+   
+   
+   
+  <video autoplay muted loop id="video-bg">
+                <source src="wine.mp4" type="video/mp4"></video>
+              
+     
+    </section>
+    <section id="menu" class="menu">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>vino tinto</h3>
+                <p>fuerte y aromático.</p>
+                <img width="150px" class="producto-img" src="a.jpg">
+                <span class="price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <h3>vino blanco</h3>
+                <p> espumoso</p>
+                <img width="150px" class="producto-img" src="a.jpg">
+                <span class="price">$3.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>vino rosa</h3>
+                <p>Delicioso y casero.</p>
+                <img width="150px" class="producto-img" src="a.jpg">
+                <span class="price">$4.00</span>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+      <article class="card">
+        <h2>Funcionalidad A</h2>
+        
+        <p>Descripción breve de la funcionalidad A.</p>
+      </article>
+      <article class="card">
+        <h2>Funcionalidad B</h2>
+        <p>Descripción breve de la funcionalidad B.</p>
+      </article>
+    </section>
+  
+   <section id="Cliente" class="Cliente container">
+       <div class="Cliente-content">
+           <h6>Registrar cliente</h6>
+           <form>
+               <label for="nombre">Nombre:</label>
+               <br>
+               <input type="text" id="nombre" name="nombre" autocomplete="name">
+      <br>
+               <label for="email">Correo electrónico:</label>
+               <br>
+               <input type="email" id="email" name="email" required>
+      <br>
+               <label for="mensaje">Telefono:</label>
+               <br>
+               <textarea id="telefono" name="telefono" required></textarea>
+      
+               <a href="#" class="btn-3">Registrar</a>
+           </form>
+       </div>
+    </section>
+    </main>
+<footer >
+        <p>Contacto: info@vinoss.com | Tel: 9760-45689</p>
+        <p>© vinosss. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

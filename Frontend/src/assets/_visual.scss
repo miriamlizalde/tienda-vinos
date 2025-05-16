@@ -1,0 +1,42 @@
+@use 'variables';
+@use 'mixins';
+
+.visual {
+    position: relative;
+   
+    color: variables.$secondary-color;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+    .visual-content {
+        h2 {
+            color: variables.$secondary-color;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color:variables.$secondary-color;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            @include button(variables.$secondary-color);
+        }
+    }
+
+    #video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}

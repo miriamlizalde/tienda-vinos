@@ -1,0 +1,88 @@
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f73e3e;
+  color: #483D8B;
+  font-family: "Segoe UI", sans-serif;
+  padding: 0rem;
+  padding: 0rem 0;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #483D8B;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #20B2AA;
+}
+
+footer {
+  background-color: #4e408a;
+  color: #20B2AA;
+  font-family: "Segoe UI", sans-serif;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  font-family: sans-serif;
+  color: #483D8B;
+  background-color: #E0FFFF;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.visual {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+.menu .menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.menu .menu-item {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
