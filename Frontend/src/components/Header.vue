@@ -1,7 +1,7 @@
 <template>
     <header class="header">
       <nav class="navbar">
-        <router-link to="/" class="logo">VinoSelect</router-link>
+        <router-link to="/" class="logo">Vinotec</router-link>
         <ul class="nav-links">
           <li><router-link to="/">Inicio</router-link></li>
           <li><router-link to="/vinos">Vinos</router-link></li>
