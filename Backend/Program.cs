@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("BackendDb");
+Console.WriteLine($"Cadena de conexión: {connectionString}");
 
 //registrar servicios
 builder.Services.AddScoped<IBodegaRepository, BodegaEfRepository>();
