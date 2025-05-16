@@ -21,6 +21,7 @@ namespace Backend.Data
         public async Task<Bodega> GetBodega(int id)
         {
             return await _dbContext.Bodegas.FindAsync(id);
+            
         }
         public async Task<Bodega> AddBodega(Bodega bodega)
         {

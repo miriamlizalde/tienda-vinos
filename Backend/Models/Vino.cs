@@ -21,15 +21,14 @@ namespace Backend.Models
         [Required]
         public DateTime Año { get; set; }
 
-        public decimal Graduacion { get; set; }
+        public double Graduacion { get; set; }
 
         [Required]
-        public float Precio { get; set; }
+        public double Precio { get; set; }
 
         public int Stock { get; set; }
 
         public string? NombreBodega { get; set; }
-        
 
 
     }

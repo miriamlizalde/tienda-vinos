@@ -57,8 +57,8 @@ namespace Backend.Data
                     Nombre = "Ramon Bilbo",
                     Tipo = "Tinto",
                     Año = new DateTime(2023, 01, 01),
-                    Graduacion = 15.5m,
-                    Precio = 10.5f,
+                    Graduacion = 15.5,
+                    Precio = 10.5,
                     Stock = 100,
                     NombreBodega = "CincoVillas"
                     
@@ -71,8 +71,8 @@ namespace Backend.Data
                         Nombre = "Rosetti",
                         Tipo = "Rosado",
                         Año = new DateTime(2018, 08, 02),
-                        Graduacion = 10.5m,
-                        Precio = 17.5f,
+                        Graduacion = 10.5,
+                        Precio = 17.5,
                         Stock = 50,
                         NombreBodega = "Lavero"
 
@@ -84,8 +84,8 @@ namespace Backend.Data
                         Nombre = "Nieves",
                         Tipo = "Blanco",
                         Año = new DateTime(2024, 10, 01),
-                        Graduacion = 9.5m,
-                        Precio = 11.2f,
+                        Graduacion = 9.5,
+                        Precio = 11.2,
                         Stock = 80,
                         NombreBodega = "Zierzo"
 
@@ -97,8 +97,8 @@ namespace Backend.Data
                         Nombre = "Swarser",
                         Tipo = "Espumoso",
                         Año = new DateTime(2025, 01, 01),
-                        Graduacion = 8.5m,
-                        Precio = 5.5f,
+                        Graduacion = 8.5,
+                        Precio = 5.5,
                         Stock = 150,
                         NombreBodega = "Lavero"
 

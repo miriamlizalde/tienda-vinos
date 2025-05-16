@@ -4,6 +4,7 @@ using Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend.Migrations
 {
     [DbContext(typeof(BackendDbContext))]
-    partial class BackendDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250516142256_Initial2")]
+    partial class Initial2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,8 +94,8 @@ namespace Backend.Migrations
                     b.Property<int>("BodegaId")
                         .HasColumnType("int");
 
-                    b.Property<double>("Graduacion")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Graduacion")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -122,7 +125,7 @@ namespace Backend.Migrations
                             Id = 1,
                             Año = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BodegaId = 2,
-                            Graduacion = 15.5,
+                            Graduacion = 15.5m,
                             Nombre = "Ramon Bilbo",
                             NombreBodega = "CincoVillas",
                             Precio = 10.5,
@@ -134,7 +137,7 @@ namespace Backend.Migrations
                             Id = 2,
                             Año = new DateTime(2018, 8, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BodegaId = 1,
-                            Graduacion = 10.5,
+                            Graduacion = 10.5m,
                             Nombre = "Rosetti",
                             NombreBodega = "Lavero",
                             Precio = 17.5,
@@ -146,10 +149,10 @@ namespace Backend.Migrations
                             Id = 3,
                             Año = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BodegaId = 3,
-                            Graduacion = 9.5,
+                            Graduacion = 9.5m,
                             Nombre = "Nieves",
                             NombreBodega = "Zierzo",
-                            Precio = 11.199999999999999,
+                            Precio = 11.199999809265137,
                             Stock = 80,
                             Tipo = "Blanco"
                         },
@@ -158,7 +161,7 @@ namespace Backend.Migrations
                             Id = 4,
                             Año = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BodegaId = 1,
-                            Graduacion = 8.5,
+                            Graduacion = 8.5m,
                             Nombre = "Swarser",
                             NombreBodega = "Lavero",
                             Precio = 5.5,

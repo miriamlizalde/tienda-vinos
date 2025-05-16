@@ -6,6 +6,7 @@ namespace Backend.Services
     public class VinoServices : IVinoServices
     {
         private readonly IVinoRepository _vinoRepository;
+        
         public VinoServices(IVinoRepository vinoRepository)
         {
             _vinoRepository = vinoRepository;
@@ -27,11 +28,6 @@ namespace Backend.Services
         public async Task<bool> DeleteVino(int id)
         {
             return await _vinoRepository.DeleteVino(id);
-        }
-
-        Task<bool> IVinoServices.DeleteVino(int id)
-        {
-            throw new NotImplementedException();
         }
     }
 }
