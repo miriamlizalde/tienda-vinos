@@ -1,0 +1,8 @@
+@use 'variables';
+@use 'mixins';
+
+h2 {
+  color: variables.$black;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

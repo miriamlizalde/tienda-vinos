@@ -4,13 +4,14 @@
 @use 'footer';
 @use 'visual';
 @use 'menu';
+@use 'features';
 
 
   
 body {
   font-family: sans-serif;
   color: variables.$primary-color;
-  background-color: #E0FFFF;
+  background-color: #e8e4e2;
 }
 
 .main{

@@ -3,8 +3,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f73e3e;
-  color: #483D8B;
+  background-color: #510a02;
+  color: #996464;
   font-family: "Segoe UI", sans-serif;
   padding: 0rem;
   padding: 0rem 0;
@@ -14,6 +14,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+header h1 {
+  color: #cf8d8d;
 }
 header nav ul {
   list-style: none;
@@ -26,16 +29,16 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: #483D8B;
+  color: #996464;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: #20B2AA;
+  color: #ceb28b;
 }
 
 footer {
-  background-color: #4e408a;
-  color: #20B2AA;
+  background-color: #510a02;
+  color: #ceb28b;
   font-family: "Segoe UI", sans-serif;
   padding: 1rem;
   border-radius: 1rem;
@@ -48,21 +51,22 @@ footer {
 .visual {
   position: relative;
   width: 100%;
-  color: #20B2AA;
+  color: #ceb28b;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  border-radius: 1rem;
 }
 .visual .visual-content h2 {
-  color: #20B2AA;
+  color: #ceb28b;
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 .visual .visual-content p {
-  color: #20B2AA;
+  color: #ceb28b;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
@@ -77,13 +81,13 @@ footer {
 }
 
 .menu {
-  color: #483D8B;
+  color: #996464;
   padding: 2rem;
   text-align: center;
   position: relative;
 }
 .menu h2 {
-  color: #483D8B;
+  color: #000000;
   margin-bottom: 1rem;
 }
 .menu .menu-items {
@@ -108,13 +112,19 @@ footer {
 }
 .menu .menu-items .menu-item .price {
   font-weight: bold;
-  color: #483D8B;
+  color: #996464;
+}
+
+h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 body {
   font-family: sans-serif;
-  color: #483D8B;
-  background-color: #E0FFFF;
+  color: #996464;
+  background-color: #e8e4e2;
 }
 
 .main {
