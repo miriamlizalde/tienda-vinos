@@ -1,0 +1,47 @@
+@use 'variables';
+@use 'mixins';
+
+.vinoCard {
+  font-family: variables.$font;
+  color: variables.$primary-color;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-family: variables.$font;
+    color: variables.$black;
+    margin-bottom: 1rem;
+  }
+
+  .vinoCard-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .vinoCard-item {
+      background: #c8b2b2;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 5px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+
+      h3 {
+        font-family: variables.$font;
+        margin-bottom: 10px;
+        color: variables.$black; 
+      }
+
+      .price {
+        font-family: variables.$font;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: variables.$primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use 'variables';
+@use 'mixins';
+
+.visual {
+    position: relative;
+    width: 100%;
+    color: variables.$secundary-color;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    .visual-content {
+        h2 {
+            color: variables.$secundary-color;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color:variables.$secundary-color;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    #video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
