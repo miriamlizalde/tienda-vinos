@@ -8,4 +8,8 @@
   
   <script setup lang="ts">
   </script>
+
+  <style lang="scss" scoped>
+  @use '@/assets/footer.scss' as *;
+  </style>
   

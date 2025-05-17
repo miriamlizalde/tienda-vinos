@@ -8,8 +8,10 @@
       <router-link to="/vinos" class="btn">Ver vinos</router-link>
     </div>
 
-    <div class="copavino">
-      <img src="@/assets/images/copavino.jpg" alt="Copa de vino" />
+    <div class="video">
+      <video autoplay muted loop >
+        <source src="@/assets/images/wine.mp4" type="video/mp4" >
+      </video>
     </div>
   </section>
 </template>
@@ -21,58 +23,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
-  gap: 2rem;
-  flex-wrap: wrap;
-
-  .intro {
-    flex: 1;
-    min-width: 300px;
-
-    h1 {
-      font-size: 2.5rem;
-      color: #800020;
-
-      span {
-        color: #4b0000;
-      }
-    }
-
-    p {
-      margin: 1rem 0 2rem;
-      font-size: 1.2rem;
-      color: #444;
-      line-height: 1.5;
-    }
-
-    .btn {
-      background-color: #800020;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #a52a2a;
-      }
-    }
-  }
-
-  .hero-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-  }
-}
+@use '@/assets/styles.scss' as *;
 </style>

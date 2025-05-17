@@ -75,11 +75,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.search-bar {
-  gap: 1rem;
-}
-.catalogo {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 </style>

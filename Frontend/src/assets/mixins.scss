@@ -1,0 +1,12 @@
+@use './variables.scss' as *;
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    font-family: $font;
+    color: $primary-color;
+    background-color: #e8e4e2;
+  }
+  

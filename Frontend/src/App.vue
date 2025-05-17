@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import Footer from '@/components/Footer.vue'
   </v-app>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use './assets/styles.scss' as *;
 </style>

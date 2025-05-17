@@ -31,7 +31,7 @@ export const useVinosStore = defineStore('vinos', () => {
   const fetchVinos = async () => {
     loading.value = true
     try {
-      const response = await axios.get('http://localhost:/vinos')
+      const response = await axios.get('https://localhost:7150/api/vino')
       vinos.value = response.data
     } catch (err) {
       error.value = 'No se pudieron cargar los vinos.'
@@ -43,7 +43,7 @@ export const useVinosStore = defineStore('vinos', () => {
 
   const addVino = async (nuevoVino: Partial<Vino>) => {
     try {
-      const response = await axios.post('http://localhost:/vinos', nuevoVino)
+      const response = await axios.post('https://localhost:7150/api/vino', nuevoVino)
       vinos.value.push(response.data)
     } catch (err) {
       error.value = 'Error al añadir el vino.'
@@ -53,7 +53,7 @@ export const useVinosStore = defineStore('vinos', () => {
 
   const removeVino = async (id: number) => {
     try {
-      await axios.delete(`http://localhost:/vinos/${id}`)
+      await axios.delete(`https://localhost:7150/api/vino/${id}`)
       vinos.value = vinos.value.filter(v => v.id !== id)
     } catch (err) {
       error.value = 'Error al eliminar el vino.'

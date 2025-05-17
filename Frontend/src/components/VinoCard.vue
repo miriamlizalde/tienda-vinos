@@ -27,5 +27,6 @@
   </script>
   
   <style lang="scss" scoped>
+  @use '@/assets/vinoCard.scss'
   </style>
   
