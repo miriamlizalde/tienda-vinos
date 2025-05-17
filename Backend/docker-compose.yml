@@ -1,0 +1,37 @@
+version: '3.4'
+
+networks: 
+  backend:
+    driver: bridge
+
+volumes:
+  sqlserver-data:
+    driver: local
+
+services:
+  db:
+    container_name: dbContainer
+    image: mcr.microsoft.com/mssql/server:2019-CU21-ubuntu-20.04
+    restart: always
+    ports:
+      - 5700:1433
+    networks:
+      - backend
+    volumes:
+      - sqlserver-data:/var/opt/mssql   # Volume persistente
+      # - D:/sqlserver-data:/var/opt/mssql  # En Windows, descomenta si prefieres bind mount
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD='yourStrong(!)Password'
+
+  api:
+    container_name: apiContainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8001:80
+    networks:
+      - backend
+    depends_on:
+      - db

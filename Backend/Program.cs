@@ -5,6 +5,7 @@ using Backend.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+//builder.WebHost.UseUrls("http://0.0.0.0:80");
 var connectionString = builder.Configuration.GetConnectionString("BackendDb");
 Console.WriteLine($"Cadena de conexión: {connectionString}");
 
@@ -28,12 +29,17 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Configure the HTTPS request pipeline.
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+
+// Uncomment the following lines if needed:
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseHttpsRedirection();
 
