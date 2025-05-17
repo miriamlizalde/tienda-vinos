@@ -51,7 +51,7 @@ export default defineComponent({
     const searchTerm = ref('')
 
     onMounted(() => {
-      vinosStore.fetchVinos()
+      vinosStore.fetchAll()
     })
 
     const buscarVinos = () => {
